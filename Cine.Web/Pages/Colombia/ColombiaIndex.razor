@@ -1,0 +1,51 @@
+﻿@page "/colombia"
+@using Cine.Web.Repositories;
+@inject IRepository repository
+
+<h3>Paises</h3>
+
+<div class="mb-3">
+    <a class="btn btn-primary" href="/colombia/create">Nuevo Departamento</a>
+</div>
+
+<GenericList MyList="Colombia">
+
+    <Body>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Departamento</th>
+                    <th></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var colombia in Colombia!)
+                {
+                    <tr>
+                        <td>
+                            @colombia.Name
+                        </td>
+                        <td>
+                            <a class="btn btn-warning">Editar</a>
+                            <button class="btn btn-danger">Borrar</button>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </Body>
+
+</GenericList>
+
+@code {
+    public List<Colombia>? Colombia { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+        var responseHppt = await repository.Get<List<Colombia>>("api/colombia");
+        Colombia = responseHppt.Response!;
+    }
+}

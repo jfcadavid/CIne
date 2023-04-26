@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cine.Shared", "Cine.Shared\Cine.Shared.csproj", "{EBB7A95C-CCB0-4BB7-A80A-A0AB9B030157}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cine.Shared", "Cine.Shared\Cine.Shared.csproj", "{EBB7A95C-CCB0-4BB7-A80A-A0AB9B030157}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cine.API", "Cine.API\Cine.API.csproj", "{252FFF3E-4F3D-4B92-88EE-1E4EDED784FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cine.API", "Cine.API\Cine.API.csproj", "{252FFF3E-4F3D-4B92-88EE-1E4EDED784FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cine.Web", "Cine.Web\Cine.Web.csproj", "{64BA2BA3-65DA-4021-9D22-C6815A97C6A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cine.Web", "Cine.Web\Cine.Web.csproj", "{64BA2BA3-65DA-4021-9D22-C6815A97C6A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
